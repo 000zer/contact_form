@@ -27,6 +27,7 @@
 body {
   box-sizing: border-box;
   height: 100%;
+  min-height: 100vh;
   font-family: 'Karla', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -312,3 +313,4 @@ body {
     min-width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
+
