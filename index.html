@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ===================================
+       META TAGS AND CONFIGURATION
+       =================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- ===================================
+       STYLES
+       =================================== -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- ===================================
+         HEADER
+         =================================== -->
+    <header class="header">
+      <h1 class="header-title">Contact Us</h1>
+    </header>
+
+    <!-- ===================================
+         MAIN CONTENT
+         =================================== -->
+    <main class="main">
+
+      <!-- ===================================
+           CONTACT FORM
+           =================================== -->
+      <form class="contact-form" novalidate>
+
+        <!-- Name fields (First Name & Last Name) -->
+        <div class="name-fields">
+          <div class="form-group">
+            <label for="first-name">First Name<span class="required">*</span></label>
+            <input type="text" id="first-name" name="first-name" required>
+            <span class="error-message" style="display: none;">This field is required</span>
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Last Name<span class="required">*</span></label>
+            <input type="text" id="last-name" name="last-name" required>
+            <span class="error-message" style="display: none;">This field is required</span>
+          </div>
+        </div>
+
+        <!-- Email address field -->
+        <div class="form-group">
+          <label for="email">Email Address<span class="required">*</span></label>
+          <input type="email" id="email" name="email" required>
+          <span class="error-message" style="display: none;">Please enter a valid email address</span>
+        </div>
+
+        <!-- Query type radio buttons -->
+        <div class="form-group">
+          <label for="query-type">Query Type<span class="required">*</span></label>
+          <div class="radio-group">
+            <div class="options">
+
+              <!-- General Enquiry option -->
+              <label class="option">
+                <input type="radio" name="queryType" value="general" required>
+                <span class="radio-custom"></span>
+                <span class="label-text">General Enquiry</span>
+              </label>
+
+              <!-- Support Request option -->
+              <label class="option">
+                <input type="radio" name="queryType" value="support" required>
+                <span class="radio-custom"></span>
+                <span class="label-text">Support Request</span>
+              </label>
+
+            </div>
+            <span class="error-message" style="display: none;">Please select a query type</span>
+          </div>
+        </div>
+
+        <!-- Message textarea field -->
+        <div class="form-group">
+          <label for="message">Message<span class="required">*</span></label>
+          <textarea id="message" name="message" required></textarea>
+          <span class="error-message" style="display: none;">This field is required</span>
+        </div>
+
+        <!-- Consent checkbox -->
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent">I consent to being contacted by the team <span class="required">*</span></label>
+          <span class="error-message" style="display: none;">
+            To submit this form, please consent to being contacted
+          </span>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+
+      <!-- ===================================
+           SUCCESS MESSAGE
+           =================================== -->
+      <div class="success-message" style="display: none;">
+        <h2>Message Sent!</h2>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+
+    </main>
+
+
+  </div>
+  <!-- ===================================
+       FOOTER / ATTRIBUTION
+       =================================== -->
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
+      Mentor</a>.
+    Coded by <a href="#" target="_blank" rel="noopener">Kostek</a>.
+  </footer>
+
+  <!-- ===================================
+       SCRIPTS
+       =================================== -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
